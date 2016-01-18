@@ -11,5 +11,5 @@ lines = takewhile(lambda x: x != '\n', stdin)
 
 lines = [int(l.rstrip('\n')) for l in lines]
 
-for l in lines[-n:]:
+for l in sorted(lines)[-n:]:
     print(l)
